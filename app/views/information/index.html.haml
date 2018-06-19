@@ -55,15 +55,21 @@
               #main-slider.flexslider
                 %ul.slides
                   %li
-                    %img{:alt => "", :src => "/assets/info1.jpg", :height => "300", :width => "1024"}
+                    %img{:alt => "", :src => "/assets/1.jpg", :height => "400", :width => "1024"}
                   %li
-                    %img{:alt => "", :src => "/assets/info2.jpg", :height => "300", :width => "1024"}/
+                    %img{:alt => "", :src => "/assets/2.jpg", :height => "400", :width => "1024"}/
                   %li
-                    %img{:alt => "", :src => "/assets/info5.jpg", :height => "300", :width => "1024"}/
+                    %img{:alt => "", :src => "/assets/3.jpg", :height => "400", :width => "1024"}/
                   %li
-                    %img{:alt => "", :src => "/assets/info4.jpg", :height => "300", :width => "1024"}/
+                    %img{:alt => "", :src => "/assets/4.jpg", :height => "400", :width => "1024"}/
                   %li
-                    %img{:alt => "", :src => "/assets/info6.jpg", :height => "300", :width => "1024"}/  
+                    %img{:alt => "", :src => "/assets/5.jpg", :height => "400", :width => "1024"}/
+                  %li
+                    %img{:alt => "", :src => "/assets/10.jpg", :height => "400", :width => "1024"}/
+                  %li
+                    %img{:alt => "", :src => "/assets/11.jpg", :height => "400", :width => "1024"}/
+                  %li
+                    %img{:alt => "", :src => "/assets/12.jpg", :height => "400", :width => "1024"}/        
               / end slider
       %section.callaction
         .container
@@ -72,82 +78,17 @@
               .big-cta
                 .cta-text
                   %h2
-                    %span About Us
+                    %span{:style => "color: navy;"} About Us
       %section#content
         .container
           .row
-            %p Span Engineering Pvt. Ltd. is in the manufacturing of different types of engineering Works. These competitively priced Products are made from superior quality iron,Stainless Steel material sourced from reliable vendors located in different parts of India. These precision, reliable and high performance goods have helped us in creating a niche in the engineering industry.
-            Our company is indulging in research, production and quality control, to match the customer need and to expand its business in India & overseas market. To keep pace with the fast changing customer demands, Our company keeps itself updated with the latest technology to develop newer manufacturing methods.
-            We are ISO 9001:2015 certified company given by The Governing Board of Progressive International Certifications Limited for "Quality management System". Over the last many years, Span Engineering Pvt. Ltd  has succesfully completed many projects large and small, for clients nationwide.
-      %footer
-        .container
-          .row
-            .col-lg-5
-              .widget
-                %h5.widgetheading Get in touch with us
-                %address
-                  %strong Span Engineering
-                  %br/
-                  Gat No. 324, Chakan MIDC Phase II
-                  %br/
-                  Bhamboli, Tal - Khed, Dist - Pune
-                %p
-                  %i.icon-phone
-                  8806315314 / 9130140895
-                  %br/
-                  %i.icon-envelope-alt
-                  spanengineering25@gmail.com
-            .col-lg-3
-              .widget
-                %h5.widgetheading Pages
-                %ul.link-list
-                  %li.active
-                    = link_to "Home", root_path
-                  %li
-                    = link_to "About Us", '#'
-                  %li
-                    = link_to "Gallery", gallery_index_path
-                  %li
-                    = link_to "Testimonials", testimonials_path
-                  %li
-                    = link_to "Contact Us",contacts_path
-            .col-lg-4
-              .widget
-                %h5.widgetheading © Span Engineering 2016
-                %p
-                  %address
-                  %p
-                    %strong Social Medial Links
-                    %ul.social-network
-                      %li
-                        %a{"data-placement" => "top", :href => "https://www.facebook.com/Span-Engineering-Pvt-Ltd-Chakan-521609734702691/", :title => "Facebook", :target => "_blank"}
-                          %i.fa.fa-facebook
-                      %li
-                        %a{"data-placement" => "top", :href => "https://twitter.com/SpanEngineering", :title => "Twitter", :target => "_blank"}
-                          %i.fa.fa-twitter
-                      %li
-                        %a{"data-placement" => "top", :href => "https://in.linkedin.com/in/vishal-shivekar-97411812b", :title => "Linkedin", :target => "_blank"}
-                          %i.fa.fa-linkedin
-                      %li
-                        %a{"data-placement" => "top", :href => "https://plus.google.com/u/0/101736486493236478496", :title => "Google plus", :target => "_blank"}
-                          %i.fa.fa-google-plus
-                %span Site Developed By
-                %a{:href => "https://www.facebook.com/atul.nikhade", :target => "_blank"} Atul Nikhade
-                .clear
-    %a.scrollup{:href => "#"}
-      %i.fa.fa-angle-up.active
-    /
-      javascript
-      \==================================================
-    / Placed at the end of the document so the pages load faster
-    %script{:src => "/assets/jquery.js"}
-    %script{:src => "/assets/jquery.easing.1.3.js"}
-    %script{:src => "/assets/bootstrap.min.js"}
-    %script{:src => "/assets/jquery.fancybox.pack.js"}
-    %script{:src => "/assets/jquery.fancybox-media.js"}
-    %script{:src => "/assets/prettify.js"}
-    %script{:src => "/assets/jquery.quicksand.js"}
-    %script{:src => "/assets/setting.js"}
-    %script{:src => "/assets/jquery.flexslider.js"}
-    %script{:src => "/assets/animate.js"}
-    %script{:src => "/assets/custom.js"}
+            %section#projects
+              %ul#thumbs.portfolio
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %img{:title => "Mr.Asaram Vanjare(M.A ,D.ED, NCC, Maharashtra Wrestling)", :src => "assets/teacher1.png", :height => "200", :width => "200"}/
+                    %h4{:style => "color: red;"} Mr. Asaram Vanjare sir
+                    %h5 ( Founder, Garudzep Academy )
+            %p Garudzep Career Academy is a committed and dedicated organization mainly established to give radical effect to achieve your goals. We at Garudzep Career Academy are here to help students to march in right direction to achieve their aspiration in civil services. We are completely focused on and dedicated to our students success through: Providing time bound strategy for study compilation, revision, analysis & writing skills as per requirement of examination. Logical analysis of facts. Personal counseling and mentoring to all our students. A dynamic, student - centric learning environment in academy.
+            %p The way to success passes through three subways viz dedication, related work and persistence. But if it is related to competitive exams, the pendulum must be tilted towards smart work which is in turn a part of related work. Day by day a huge competition is introducing in this sector so as to acquire the powers offered by the same, considering that the old strategy which in includes only hard work, some how doesn't work satisfactorily. The need of coaching has arouse as a remedy for above. Definitely along with study, a proper approach towards exam surely brings success in less time, it is same as that, " If you are having different molds of masterpieces, it becomes easy to put mud mash into it so as to make superior paragons".
+            %p The objective of competitive exam consist the development of visionary Administration which having the strategy to efficiently manage the Administration & bureaucracy. Two original contributions were imp. in this sector is identification of situation & implement the efficient suitable strategy for that incidence. This kind of aspirants are useful in the Administration for that guidence is very imporatant that can be full fill your personality to tackle the situation.
