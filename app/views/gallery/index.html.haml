@@ -1,120 +1,114 @@
 %html{:lang => "en"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
-    %title Garudzep Career Academy
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-    %meta{:content => "http://bootstraptaste.com", :name => "author"}/
-    / css
-    %link{:href => "/assets/bootstrap.min.css", :rel => "stylesheet"}/
-    %link{:href => "/assets/jquery.fancybox.css", :rel => "stylesheet"}
-    %link{:href => "/assets/flexslider.css", :rel => "stylesheet"}/
-    %link{:href => "/assets/style.css", :rel => "stylesheet"}/
-    / Theme skin
-    %link{:href => "/assets/default.css", :rel => "stylesheet"}/
-    / HTML5 shim, for IE6-8 support of HTML5 elements
-    /[if lt IE 9]
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   %body
     #wrapper
-      / start header
-      %header
-        .navbar.navbar-default.navbar-static-top
-          .container
-            %ul.nav.navbar-nav
-              %li
-                %img{:alt => "", :src => "/assets/logo.jpg", :height => "70", :width => "100"}
-              %li
-                %h2{:style => "color: red;"} Garudzep Career Academy
-            .navbar-header
-              %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-                %span.icon-bar
-                %span.icon-bar
-                %span.icon-bar
-              %a.navbar-brand{:href => ""}
-            .navbar-collapse.collapse
-              %ul.nav.navbar-nav
-                %li
-                  = link_to "Home", root_path
-                %li
-                  = link_to "About Us", information_index_path
-                %li
-                  = link_to "Gallery", '#'
-                %li
-                  = link_to "Testimonials", testimonials_path
-                %li
-                  = link_to "Contact Us",contacts_path
       %section#content
         .container
-          .row.center
-            .col-lg-3
-              %h4.heading ISO Certificate
-              .row
-                %section#projects
-                  %ul#thumbs.portfolio
-                    / Item Project and Filter Name
-                    %li.col-lg-10.design{"data-id" => "id-0", "data-type" => "web"}
-                      .item-thumbs 
-                        / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/certificate.jpg", :title => "Work 1"}
-                          %span.overlay-img
-                          %span.overlay-img-thumb.font-icon-plus
-                        / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/certificate.jpg"}/
-                   
-            .col-lg-9
-              %h4.heading Some of our big Clients
-              .row
-                %section#projects
-                  %ul#thumbs.portfolio
-                    / Item Project and Filter Name
-                    %li.col-lg-4.design{"data-id" => "id-0", "data-type" => "web"}
-                      .item-thumbs
-                        / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client1.jpg", :title => "Work 1"}
-                          %span.overlay-img
-                          %span.overlay-img-thumb.font-icon-plus
-                        / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/client1.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.design{"data-id" => "id-1", "data-type" => "icon"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client7.jpg", :title => "Work 2"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client7.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client5.jpg", :title => "Work 3"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client5.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client4.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client4.jpg", :height => "720", :width => "1280"}/
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client2.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client2.jpg", :height => "720", :width => "1280"}/
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client6.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client6.jpg", :height => "720", :width => "1280"}/
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/14.jpg", :title => "Garudzep Achievment"}
+                    %img{ :src => "assets/14.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/19.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/19.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/16.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/16.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/17.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/17.jpg"}/
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/11.jpg", :title => "Garudzep Achievment"}
+                    %img{ :src => "/assets/11.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/2.jpg", :title => "Garudzep Achievment"}
+                    %img{ :src => "/assets/2.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/3.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/3.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/13.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/13.jpg"}/
+
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/10.jpg", :title => "Garudzep Achievment"}
+                    %img{ :src => "assets/10.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/1.jpg", :title => "Garudzep Achievment"}
+                    %img{ :src => "/assets/1.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/21.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/21.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/15.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/15.jpg"}/
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/4.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "assets/4.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/20.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/20.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/18.jpg", :title => "Garudzep Achievment"}
+                    %img{:src => "/assets/18.jpg"}/
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/12.jpg", :title => "Garudzep Achievment"}
+                    %img{ :src => "/assets/12.jpg"}/
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"juj9VJDx0zE"}?rel=0"}
+                %li.item-thumbs.col-lg-3.design{"data-id" => "id-1", "data-type" => "icon"}
+                  %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"g_TyFMlfz8A"}?rel=0"}
+                %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
+                  %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"3h3SeblSeqo"}?rel=0"}
+                %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
+                  %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"vLFFoEY25cs"}?rel=0"}
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"NBms180XpPw"}?rel=0"}
+                %li.item-thumbs.col-lg-3.design{"data-id" => "id-1", "data-type" => "icon"}
+                  %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"SOzJ5m8RmYo"}?rel=0"}
+                %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
+                  %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"gVemfovdLFE"}?rel=0"}
+                %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
+                  %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{"aVZg2gFBFAU"}?rel=0"}        

@@ -8,7 +8,50 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:charset => "utf-8"}/
+    %title Garudzep Career Academy
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "http://bootstraptaste.com", :name => "author"}/
+    / css
+    %link{:href => "/assets/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "/assets/jquery.fancybox.css", :rel => "stylesheet"}
+    %link{:href => "/assets/flexslider.css", :rel => "stylesheet"}/
+    %link{:href => "/assets/style.css", :rel => "stylesheet"}/
+    / Theme skin
+    %link{:href => "/assets/default.css", :rel => "stylesheet"}/
+    / HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   %body
+    #wrapper
+      / start header
+      %header
+        .navbar.navbar-default.navbar-static-top
+          .container
+            %ul.nav.navbar-nav
+              %li
+                %img{:alt => "", :src => "/assets/logo.jpg", :height => "70", :width => "100"}
+              %li
+                %h2{:style => "color: red;"} Garudzep Career Academy
+            .navbar-header
+              %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.navbar-brand{:href => ""}
+            .navbar-collapse.collapse
+              %ul.nav.navbar-nav
+                %li
+                  = link_to "Home", root_path
+                %li
+                  = link_to "About Us", information_index_path
+                %li
+                  = link_to "Gallery", gallery_index_path
+                %li
+                  = link_to "Testimonials", testimonials_path
+                %li
+                  = link_to "Contact Us",contacts_path
     = yield
   %footer
     .container
@@ -65,6 +108,9 @@
                   %li
                     %a{"data-placement" => "top", :href => "https://plus.google.com/u/0/101736486493236478496", :title => "Google plus", :target => "_blank"}
                       %i.fa.fa-google-plus
+                  %li
+                    %a{"data-placement" => "top", :href => "https://www.youtube.com/watch?v=F60o702HzSw", :title => "Youtube", :target => "_blank"}
+                      %i.fa.fa-youtube    
             %span Site Developed By
             %a{:style => "color: navy;",:href => "https://www.facebook.com/atul.nikhade", :target => "_blank"} Atul Nikhade
             .clear
