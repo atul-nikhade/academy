@@ -308,7 +308,7 @@ ul.nav li.dropdown a {
 
 #featured{
 	width: 100%;
-	background:#fcfcfc;
+	background:#FF3;
 	position:relative;
 	margin:0;
 	padding:0;
@@ -320,11 +320,11 @@ ul.nav li.dropdown a {
 /* --- flexslider --- */
 
 #featured .flexslider {
-	padding:0;
+	padding:25px;
 	margin: 50px 0 30px; 
-	background: #fff; 
+	background: #FF3; 
 	position: relative; 
-	zoom: 1;
+	zoom: 10;
 }
 
 .flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
@@ -1885,7 +1885,7 @@ article img.pull-right, article .align-right{
 		width: 90%; 
 		padding: 2%; 
 		position: absolute; 
-		left: 0; 
+		left: 40px; 
 		bottom: -40px; 
 	}
 
